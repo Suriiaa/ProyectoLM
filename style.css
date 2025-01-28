@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d3250;
+}
+
+header {
+    background-color: #4caf50; /* Verde */
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #000; /* Negro */
+}
+
+header h2 {
+    color: #505050; /* Gris */
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #505050; /* Gris */
+}
+
+header .header-img {
+    width: 170px;
+    height: auto;
+    margin-bottom: 1rem; 
+}
+
+header h1, header h2, header p {
+    margin: 0;
+}
+
+nav {
+    background-color: #000; /* Negro */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; 
+    gap: 1rem; 
+    flex-grow: 1; 
+    margin-left: 220px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Blanco */
+    font-weight: bold;
+}
+
+.user-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.user-buttons .btn {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.user-buttons .btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    margin: 0 15px; /* Espacio entre los iconos */
+}
+
+.social-icon {
+    width: 40px; /* Tamaño de los iconos */
+    height: auto;
+    transition: transform 0.3s ease; /* Efecto de transición al pasar el ratón */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+}
