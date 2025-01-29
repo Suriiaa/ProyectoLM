@@ -1,0 +1,191 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Color beige */
+    color: #000; /* Texto negro */
+}
+
+header {
+    background-color: #d3d3d3; /* Gris */
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #e74c3c; /* Rojo para "CONCESIONARIO SURIA" */
+}
+
+header h2, header p {
+    margin: 0;
+    color: #000; /* Negro */
+}
+
+header .header-img {
+    width: 170px;
+    height: auto;
+    margin-bottom: 1rem; 
+}
+
+nav {
+    background-color: #ff6f61; /* Rojo claro */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-grow: 1;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Blanco */
+    font-weight: bold;
+}
+
+.user-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.user-buttons .btn {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+footer .social-media {
+    margin-top: 1rem;
+}
+
+footer .social-media a {
+    margin: 0 15px;
+}
+
+footer .social-icon {
+    width: 40px;
+    height: auto;
+}
+
+#berlina-page {
+    background-color: #d3d3d3;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.filtro-marcas {
+    width: 25%;
+}
+
+.marcas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center; /* Centra los elementos dentro de las celdas */
+}
+
+.marca-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.marca-btn:hover {
+    transform: scale(1.05);
+}
+
+.marca-btn img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.marca-btn span {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.contenido-berlina {
+    width: 70%;
+}
+
+.titulo-marca {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: #333;
+}
+
+.coches-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+button.coche-card {
+    width: 48%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border: 2px solid #e74c3c;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+}
+
+button.coche-card:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.05);
+}
+
+button.coche-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.coche-card h3 {
+    font-size: 20px;
+    color: #222;
+    margin: 10px 0 5px;
+}
+
+.coche-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e74c3c;
+}

@@ -1,30 +1,31 @@
+body, html {
+    margin: 0; /* Elimina el margen predeterminado del body y html */
+    padding: 0; /* Elimina el padding predeterminado */
+    height: 100%; /* Asegura que el body ocupe toda la altura de la página */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2d3250;
+    background-color: #f4f4f4; /* Color beige */
+    color: #000; /* Texto negro */
 }
 
 header {
-    background-color: #4caf50; /* Verde */
+    background-color: #d3d3d3; /* Gris */
     padding: 1rem;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    color: #e74c3c; /* Rojo para "CONCESIONARIO SURIA" */
+}
+
+header h2, header p {
+    margin: 0;
     color: #000; /* Negro */
-}
-
-header h2 {
-    color: #505050; /* Gris */
-    margin: 0;
-}
-
-header p {
-    margin: 0;
-    font-size: 1.2rem;
-    color: #505050; /* Gris */
 }
 
 header .header-img {
@@ -33,12 +34,12 @@ header .header-img {
     margin-bottom: 1rem; 
 }
 
-header h1, header h2, header p {
-    margin: 0;
+img {
+    border-radius: 8px; /* Bordes redondeados */
 }
 
 nav {
-    background-color: #000; /* Negro */
+    background-color: #ff6f61; /* Rojo claro */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,11 +81,16 @@ nav a {
 }
 
 footer {
-    background-color: #333; /* Color de fondo del footer */
+    background-color: #ff6f61; /* Color de fondo del footer */
     color: white;
     text-align: center;
     padding: 2rem 0;
+    margin: 0; /* Elimina el margen debajo del footer */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    position: relative; /* Coloca el footer en su posición normal */
+    bottom: 0; /* Asegura que el footer esté al final de la página */
 }
+
 
 footer p {
     margin: 0;
@@ -108,3 +114,234 @@ footer p {
 .social-icon:hover {
     transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
 }
+
+
+.porque-elegirnos-img {
+    width: 30%; /* Reduce el tamaño de la imagen al 50% del contenedor */
+    max-width: 400px; /* Ancho máximo de la imagen */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para un estilo más suave */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+}
+
+.tu-coche-ideal-img {
+    width: 50%; /* Reduce el tamaño de la imagen al 50% del contenedor */
+    max-width: 400px; /* Ancho máximo de la imagen */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para un estilo más suave */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+}
+
+.bienvenidos {
+    background-color: #e0f7fa; /* Azul claro */
+    padding: 20px;
+}
+
+/* Fondo de la sección "¿Por qué elegirnos?" */
+.porque-elegirnos {
+    background-color: #b2ebf2; /* Azul intermedio */
+    padding: 20px;
+}
+
+/* Fondo de la sección "Ven y encuentra tu coche ideal" */
+.encuentra-coche {
+    background-color: #80deea; /* Azul más oscuro */
+    padding: 20px;
+}
+
+ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+.quienes-somos {
+    background-color: #b2ebf2; /* Azul intermedio */
+    padding: 20px;
+}
+
+/* General styles for the tienda section */
+.tienda {
+    background-color: #e0e0e0; /* Mismo fondo que "¿Por qué elegirnos?" */
+    padding: 2rem;
+    text-align: center;
+}
+
+.tienda h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Estilo del menú en filas de 2 */
+.menu-tienda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 0.5rem; /* Reducido el espacio entre los elementos */
+    justify-content: center; /* Centra los elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    margin-top: 2rem;
+    max-width: 700px; /* Limita el ancho total */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para cada elemento del menú */
+.menu-item {
+    position: relative;
+    width: 100%;
+    max-width: 280px; /* Ancho máximo de cada botón */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.menu-item span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente negro */
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor del menú de filtros */
+.filtro-marcas {
+    width: 25%;
+}
+
+/* Grid para organizar las marcas en 2 columnas */
+.marcas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Botón de marca */
+.marca-btn img {
+    width: 50px;
+    height: auto;
+}
+
+/* Estilos para las imágenes dentro del botón */
+.marca-btn img {
+    width: 50px; /* Tamaño reducido */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Texto de la marca */
+.marca-btn span {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Efecto hover */
+.marca-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Contenedor principal de la página Berlina */
+.contenido-berlina {
+    width: 70%;
+}
+
+/* Títulos de marca */
+.titulo-marca {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: #333;
+}
+
+.coche-card {
+    width: 48%; /* O ajusta según sea necesario */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.coche-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Modelo y precio */
+.coche-card h3 {
+    font-size: 20px;
+    color: #222;
+    margin: 10px 0 5px;
+}
+
+.coche-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.coches-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#berlina-page {
+    background-color: #d3d3d3;
+
+}
+
+button.coche-card {
+    background-color: white; /* Fondo blanco para los botones */
+    border: 2px solid #e74c3c; /* Borde rojo */
+    padding: 10px;
+    width: 48%;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+button.coche-card:hover {
+    background-color: #f4f4f4; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+button.coche-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#tienda-page{
+    background-color: #b2ebf2;
+}
+
