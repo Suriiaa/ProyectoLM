@@ -42,6 +42,7 @@ nav {
     justify-content: center;
     gap: 1rem;
     flex-grow: 1;
+    margin-left: 220px;
 }
 
 nav a {
@@ -66,29 +67,40 @@ nav a {
 }
 
 footer {
-    background-color: #ff6f61;
+    background-color: #ff6f61; /* Color de fondo del footer */
     color: white;
     text-align: center;
     padding: 2rem 0;
+    margin: 0; /* Elimina el margen debajo del footer */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    position: relative; /* Coloca el footer en su posición normal */
+    bottom: 0; /* Asegura que el footer esté al final de la página */
 }
+
 
 footer p {
     margin: 0;
     font-size: 1.2rem;
 }
 
-footer .social-media {
+.social-media {
     margin-top: 1rem;
 }
 
-footer .social-media a {
-    margin: 0 15px;
+.social-media a {
+    margin: 0 15px; /* Espacio entre los iconos */
 }
 
-footer .social-icon {
-    width: 40px;
+.social-icon {
+    width: 40px; /* Tamaño de los iconos */
     height: auto;
+    transition: transform 0.3s ease; /* Efecto de transición al pasar el ratón */
 }
+
+.social-icon:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+}
+
 
 #berlina-page {
     background-color: #d3d3d3;
