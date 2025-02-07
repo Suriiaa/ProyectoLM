@@ -8,19 +8,19 @@ body, html {
 }
 
 header {
-    background-color: #d3d3d3; 
+    background-color: #d3d3d3; /* Gris */
     padding: 1rem;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    color: #e74c3c; 
+    color: #e74c3c; /* Rojo para "CONCESIONARIO SURIA" */
 }
 
 header h2, header p {
     margin: 0;
-    color: #000; 
+    color: #000; /* Negro */
 }
 
 header .header-img {
@@ -29,8 +29,12 @@ header .header-img {
     margin-bottom: 1rem; 
 }
 
+img {
+    border-radius: 8px; /* Bordes redondeados */
+}
+
 nav {
-    background-color: #ff6f61;
+    background-color: #ff6f61; /* Rojo claro */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,15 +43,15 @@ nav {
 
 .nav-links {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-grow: 1;
-    margin-left: 220px;
+    justify-content: center; 
+    gap: 1rem; 
+    flex-grow: 1; 
+    margin-left: 320px;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff; 
+    color: #fff; /* Blanco */
     font-weight: bold;
 }
 
@@ -64,6 +68,11 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
+}
+
+.user-buttons .btn:hover {
+    background-color: #0056b3;
+    color: white;
 }
 
 footer {
