@@ -147,7 +147,7 @@ footer p {
 
 /* Fondo de la sección "Ven y encuentra tu coche ideal" */
 .encuentra-coche {
-    background-color: #80deea; /* Azul más oscuro */
+    background-color: #b2ebf2; /* Azul más oscuro */
     padding: 20px;
 }
 
@@ -380,4 +380,26 @@ button.coche-card img {
     .user-buttons {
         margin-top: 10px;
     }
+}
+
+.linea-coches {
+    display: flex;
+    justify-content: center; /* Centra las imágenes en la fila */
+    align-items: center;
+    gap: 15px; /* Espaciado entre imágenes */
+    padding: 20px;
+    background-color: #b2ebf2; /* Fondo claro */
+    overflow-x: auto; /* Permite desplazamiento horizontal si hay muchas imágenes */
+}
+
+.linea-coches img {
+    width: 250px; /* Tamaño de cada coche */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.linea-coches img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
 }
