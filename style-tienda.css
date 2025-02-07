@@ -83,11 +83,13 @@ footer {
 }
 
 
+
 footer p {
     margin: 0;
     font-size: 1.2rem;
 }
 
+.social-media {
 .social-media {
     margin-top: 1rem;
 }
