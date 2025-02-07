@@ -3,24 +3,24 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Color beige */
-    color: #000; /* Texto negro */
+    background-color: #d3d3d3; 
+    color: #000; 
 }
 
 header {
-    background-color: #d3d3d3; /* Gris */
+    background-color: #d3d3d3; 
     padding: 1rem;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    color: #e74c3c; /* Rojo para "CONCESIONARIO SURIA" */
+    color: #e74c3c; 
 }
 
 header h2, header p {
     margin: 0;
-    color: #000; /* Negro */
+    color: #000; 
 }
 
 header .header-img {
@@ -39,9 +39,10 @@ nav {
 
 .nav-links {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-grow: 1;
+    justify-content: center; 
+    gap: 1rem; 
+    flex-grow: 1; 
+    margin-left: 320px;
 }
 
 nav a {
@@ -65,34 +66,47 @@ nav a {
     font-size: 14px;
 }
 
+.user-buttons .btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
 footer {
-    background-color: #ff6f61;
+    background-color: #ff6f61; 
     color: white;
     text-align: center;
     padding: 2rem 0;
+    margin: 0; 
+    width: 100%; 
+    position: relative; 
+    bottom: 0;
 }
+
 
 footer p {
     margin: 0;
     font-size: 1.2rem;
 }
 
-footer .social-media {
+.social-media {
     margin-top: 1rem;
 }
 
-footer .social-media a {
-    margin: 0 15px;
+.social-media a {
+    margin: 0 15px; 
 }
 
-footer .social-icon {
-    width: 40px;
+.social-icon {
+    width: 40px; 
     height: auto;
+    transition: transform 0.3s ease; 
 }
 
-#berlina-page {
-    background-color: #d3d3d3;
+.social-icon:hover {
+    transform: scale(1.1); 
 }
+
+
 
 .content-wrapper {
     display: flex;
@@ -108,7 +122,7 @@ footer .social-icon {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    justify-items: center; /* Centra los elementos dentro de las celdas */
+    justify-items: center; 
 }
 
 .marca-btn {
@@ -139,6 +153,10 @@ footer .social-icon {
 }
 
 .contenido-berlina {
+    width: 70%;
+}
+
+.contenido-suv {
     width: 70%;
 }
 
@@ -188,4 +206,41 @@ button.coche-card img {
     font-size: 16px;
     font-weight: bold;
     color: #e74c3c;
+}
+
+.nav-back {
+    margin-right: 20px;
+}
+
+.nav-back .btn {
+    background-color: #fff;
+    color: #e74c3c;
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 2px solid #e74c3c;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-back .btn:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .user-buttons {
+        margin-top: 10px;
+    }
 }

@@ -1,0 +1,206 @@
+.detalle-coche-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.detalle-imagen {
+    flex: 1;
+    max-width: 50%;
+}
+
+.detalle-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.detalle-info-container {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.detalle-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.detalle-info h2 {
+    font-size: 28px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.detalle-info p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.detalle-boton {
+    width: 100%;
+    text-align: left;
+}
+
+.detalle-boton button {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.detalle-boton button:hover {
+    background-color: #c0392b;
+}
+
+header {
+    background-color: #d3d3d3; 
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #e74c3c; 
+}
+
+header h2, header p {
+    margin: 0;
+    color: #000; 
+}
+
+header .header-img {
+    width: 170px;
+    height: auto;
+    margin-bottom: 1rem; 
+}
+
+nav {
+    background-color: #ff6f61; /* Rojo claro */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; 
+    gap: 1rem; 
+    flex-grow: 1; 
+    margin-left: 320px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Blanco */
+    font-weight: bold;
+}
+
+.user-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.user-buttons .btn {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.user-buttons .btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+footer {
+    background-color: #ff6f61; 
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0; 
+    width: 100%; 
+    position: relative; 
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    margin: 0 15px; 
+}
+
+.social-icon {
+    width: 40px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.social-icon:hover {
+    transform: scale(1.1); 
+}
+
+.nav-back {
+    margin-right: 20px;
+}
+
+.nav-back .btn {
+    background-color: #fff;
+    color: #e74c3c;
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 2px solid #e74c3c;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-back .btn:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .user-buttons {
+        margin-top: 10px;
+    }
+}

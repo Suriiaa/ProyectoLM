@@ -51,7 +51,7 @@ nav {
     justify-content: center; 
     gap: 1rem; 
     flex-grow: 1; 
-    margin-left: 220px;
+    margin-left: 320px;
 }
 
 nav a {
@@ -345,3 +345,39 @@ button.coche-card img {
     background-color: #b2ebf2;
 }
 
+.nav-back {
+    margin-right: 20px;
+}
+
+.nav-back .btn {
+    background-color: #fff;
+    color: #e74c3c;
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 2px solid #e74c3c;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-back .btn:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .user-buttons {
+        margin-top: 10px;
+    }
+}

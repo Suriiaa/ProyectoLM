@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/ProyectoLM/style.css">
+    <link rel="stylesheet" href="/ProyectoLM/style-tienda.css">
 </head>
 <body>
     <header>
@@ -19,11 +19,165 @@
             <a href="/ProyectoLM/pag/quienes-somos.html">¿Quiénes Somos?</a>
             <a href="/ProyectoLM/pag/tienda.html">Tienda</a>
         </div>
+        <div class="nav-back">
+            <button class="btn" onclick="window.history.back();">Volver</button>
+        </div>
         <div class="user-buttons">
             <button class="btn">Iniciar Sesión</button>
             <button class="btn">Registrarse</button>
         </div>
     </nav>
+ <body id="berlina-page">
+    <main>
+        <div class="content-wrapper">
+            <div class="filtro-marcas">
+                <h3>Filtrar por Marca</h3>
+                <div class="marcas-grid">
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/ford.png" alt="Ford">
+                        <span>Ford</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/chevrolet.png" alt="Chevrolet">
+                        <span>Chevrolet</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/maserati.png" alt="Maserati">
+                        <span>Maserati</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/BMW.svg.png" alt="bmw">
+                        <span>BMW</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/audi.png" alt="audi">
+                        <span>Audi</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/porsche.png" alt="Porsche">
+                        <span>Porsche</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/Aston Martin.png" alt="Aston Martin">
+                        <span>Aston Martin</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/mercedes.png" alt="Mercedes">
+                        <span>Mercedes</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="contenido-berlina">
+                <h2 class="titulo-marca">Ford</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/Ford-Mustang-Shelby.html'">
+                        <img src="/ProyectoLM/img/deportivos/shelby.webp" alt="Ford Shelby">
+                        <h3>Ford Mustang Shelby GT500</h3>
+                        <p>Precio: 79.000</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/Ford-MustangGT.html'">
+                        <img src="/ProyectoLM/img/deportivos/mustang.webp" alt="ford Mustang">
+                        <h3>Ford Mustang GT</h3>
+                        <p>Precio: 43.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Chevrolet</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/Chevrolet-Corvete.html'">
+                        <img src="/ProyectoLM/img/deportivos/corvete.png" alt="Chevrolet">
+                        <h3>Chevrolet Corvette Stingray</h3>
+                        <p>Precio: 79.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/Chevrolet-Camaro.html'">
+                        <img src="/ProyectoLM/img/deportivos/camaro.png" alt="Chevrolet">
+                        <h3>Chevrolet Camaro SS</h3>
+                        <p>Precio: 43.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Maserati</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/Maserati-GranTurismo.html'">
+                        <img src="/ProyectoLM/img/deportivos/gran turismo.png" alt="Maserati">
+                        <h3>Maserati GranTurismo</h3>
+                        <p>Precio: 90.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/Maserati-Alfieri.html'">
+                        <img src="/ProyectoLM/img/deportivos/alfieri.webp" alt="Maserati">
+                        <h3>Maserati Alfieri</h3>
+                        <p>Precio: 85.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">BMW</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/BMW-M8.html'">
+                        <img src="/ProyectoLM/img/deportivos/m8.png" alt="bmw">
+                        <h3>BMW M8</h3>
+                        <p>Precio: 133.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/BMW-M2.html'">
+                        <img src="/ProyectoLM/img/deportivos/m2.webp" alt="bmw">
+                        <h3>BMW M2</h3>
+                        <p>Precio: 61.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Audi</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/Audi-RS5t.html'">
+                        <img src="/ProyectoLM/img/deportivos/rs5.png" alt="Audi">
+                        <h3>Audi RS5t</h3>
+                        <p>Precio: 75.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/Audi-S5.html'">
+                        <img src="/ProyectoLM/img/deportivos/s5.png" alt="Audi">
+                        <h3>Audi S5</h3>
+                        <p>Precio: 54.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Porsche</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/Porsche718.html'">
+                        <img src="/ProyectoLM/img/deportivos/cayman.webp" alt="Porsche">
+                        <h3>Porsche 718 Cayman S</h3>
+                        <p>Precio: 60.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/Porsche-911.html'">
+                        <img src="/ProyectoLM/img/deportivos/911.webp" alt="Porsche">
+                        <h3>Porsche 911 Carrera</h3>
+                        <p>Precio: 61.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Aston Martin</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/AstonMartin-Vantage.html'">
+                        <img src="/ProyectoLM/img/deportivos/vantage.webp" alt="Aston Martin">
+                        <h3>Aston Martin Vantage</h3>
+                        <p>Precio: 139.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/AstonMartin-DB11.html'">
+                        <img src="/ProyectoLM/img/deportivos/db11.png" alt="Aston Martin">
+                        <h3>Aston Martin DB11</h3>
+                        <p>Precio: 205.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Mercedes</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/MercedesGT.html'">
+                        <img src="/ProyectoLM/img/deportivos/amg.png" alt="Mercedes">
+                        <h3>Mercedes-AMG GT</h3>
+                        <p>Precio: 100.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Deportivos/Mercedes-EClass.html'">
+                        <img src="/ProyectoLM/img/deportivos/e class.avif" alt="Mercedes">
+                        <h3>Mercedes-Benz E-Class</h3>
+                        <p>Precio: 75.000€</p>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+</body>
     <footer>
         <p>Gracias por visitar nuestra página</p>
         <div class="social-media">

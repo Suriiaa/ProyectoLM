@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/ProyectoLM/style.css">
+    <link rel="stylesheet" href="/ProyectoLM/style-tienda.css">
 </head>
 <body>
     <header>
@@ -19,11 +19,165 @@
             <a href="/ProyectoLM/pag/quienes-somos.html">¿Quiénes Somos?</a>
             <a href="/ProyectoLM/pag/tienda.html">Tienda</a>
         </div>
+        <div class="nav-back">
+            <button class="btn" onclick="window.history.back();">Volver</button>
+        </div>
         <div class="user-buttons">
             <button class="btn">Iniciar Sesión</button>
             <button class="btn">Registrarse</button>
         </div>
     </nav>
+ <body id="coupe-page">
+    <main>
+        <div class="content-wrapper">
+            <div class="filtro-marcas">
+                <h3>Filtrar por Marca</h3>
+                <div class="marcas-grid">
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/BMW.svg.png" alt="BMW">
+                        <span>BMW</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/mercedes.png" alt="Mercedes">
+                        <span>Mercedes</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/audi.png" alt="Audi">
+                        <span>Audi</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/mustang.png" alt="Ford-Mustang">
+                        <span>Ford-Mustang</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/chevrolet.png" alt="Chevrolet">
+                        <span>Chevrolet</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/nissan.png" alt="Nissan">
+                        <span>Nissan</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/hyundai.png" alt="Hyundai">
+                        <span>Hyundai</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/kia.png" alt="Kia">
+                        <span>Kia</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="contenido-berlina">
+                <h2 class="titulo-marca">BMW</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/BMW-Serie4.html'">
+                        <img src="/ProyectoLM/img/coupe/serie 4.png" alt="BMW Serie 4">
+                        <h3>BMW Serie 4</h3>
+                        <p>Precio: 52.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/BMW-Serie2.html'">
+                        <img src="/ProyectoLM/img/coupe/serie 2.png" alt="BMW Serie 2">
+                        <h3>BMW Serie 2</h3>
+                        <p>Precio: 45.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Mercedes</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/Mercedes-ClaseC.html'">
+                        <img src="/ProyectoLM/img/coupe/mercedes clase c.webp" alt="Mercedes Clase C">
+                        <h3>Mercedes Clase C</h3>
+                        <p>Precio: 57.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/Mercedes-ClaseCLA.html'">
+                        <img src="/ProyectoLM/img/coupe/mercedes clase CLA.webp" alt="Mercedes Clase CLA">
+                        <h3>Mercedes Clase CLA</h3>
+                        <p>Precio: 47.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Audi</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/Audia-A5.html'">
+                        <img src="/ProyectoLM/img/coupe/audi a5.png" alt="Audi A5">
+                        <h3>Audi A5</h3>
+                        <p>Precio: 46.000</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/Audi-A7.html'">
+                        <img src="/ProyectoLM/img/coupe/audia a7.png" alt="Audi A7">
+                        <h3>Audi A7</h3>
+                        <p>Precio: 69.500€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Ford Mustang</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/Ford-Mustang-MarchE.html'">
+                        <img src="/ProyectoLM/img/coupe/ford mustan mach e.png" alt="Ford Mustang Mach-E">
+                        <h3>Ford Mustang Mach-E</h3>
+                        <p>Precio: 45.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/Ford-Mustang.html'">
+                        <img src="/ProyectoLM/img/coupe/mustang.webp" alt="Ford Mustang">
+                        <h3>Ford Mustang</h3>
+                        <p>Precio: 42.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Chevrolet</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/Chevrolet-Camaro.html'">
+                        <img src="/ProyectoLM/img/coupe/camaro.png" alt="Chevrolet Camaro">
+                        <h3>Chevrolet Camaro</h3>
+                        <p>Precio: 40.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/Chevrolet-Malibu.html'">
+                        <img src="/ProyectoLM/img/coupe/chevrolet malibu.png" alt="Chevrolet Malibu">
+                        <h3>Chevrolet Malibu</h3>
+                        <p>Precio: 28.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Nissan</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/Nissan-370Z.html'">
+                        <img src="/ProyectoLM/img/coupe/nissan 370Z.webp" alt="Nissan 370Z">
+                        <h3>Nissan 370Z</h3>
+                        <p>Precio: 31.000</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/Nissan-Maxima.html'">
+                        <img src="/ProyectoLM/img/coupe/nissan maximo.webp" alt="Nissan Maxima">
+                        <h3>Nissan Maxima</h3>
+                        <p>Precio: 37.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Hyundai</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/Hyundai-Veloster.html'">
+                        <img src="/ProyectoLM/img/coupe/hyundai veloster.jpeg" alt="Hyundai Veloster">
+                        <h3>Hyundai Veloster</h3>
+                        <p>Precio: 23.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/Hyundai-Genesis.html'">
+                        <img src="/ProyectoLM/img/coupe/hyundai genesis.webp" alt="Hyundai Genesis">
+                        <h3>Hyundai Genesis</h3>
+                        <p>Precio: 30.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Kia</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/Kia-Stringer.html'">
+                        <img src="/ProyectoLM/img/coupe/kia stringer.webp" alt="Kia Stringer">
+                        <h3>Kia Stringer</h3>
+                        <p>Precio: 36.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/Coupe/Kia-K900.html'">
+                        <img src="/ProyectoLM/img/coupe/kia k900.png" alt="Kia K900">
+                        <h3>Kia K900</h3>
+                        <p>Precio: 60.000€</p>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+</body>
     <footer>
         <p>Gracias por visitar nuestra página</p>
         <div class="social-media">

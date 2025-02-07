@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/ProyectoLM/style.css">
+    <link rel="stylesheet" href="/ProyectoLM/style-tienda.css">
 </head>
 <body>
     <header>
@@ -19,11 +19,165 @@
             <a href="/ProyectoLM/pag/quienes-somos.html">¿Quiénes Somos?</a>
             <a href="/ProyectoLM/pag/tienda.html">Tienda</a>
         </div>
+        <div class="nav-back">
+            <button class="btn" onclick="window.history.back();">Volver</button>
+        </div>
         <div class="user-buttons">
             <button class="btn">Iniciar Sesión</button>
             <button class="btn">Registrarse</button>
         </div>
     </nav>
+ <body id="berlina-page">
+    <main>
+        <div class="content-wrapper">
+            <div class="filtro-marcas">
+                <h3>Filtrar por Marca</h3>
+                <div class="marcas-grid">
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/ferrari.png" alt="Ferrari">
+                        <span>Ferrari</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/lambo.png" alt="Lambo">
+                        <span>Lamborghini</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/mclaren.png" alt="Mclaren">
+                        <span>Mclaren</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/bugatti.png" alt="bugatti">
+                        <span>Bugatti</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/porsche.png" alt="porsche">
+                        <span>Porsche</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/Aston Martin.png" alt="Aston Martin">
+                        <span>Aston Martin</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/koenigsegg.avif" alt="Koenigsegg">
+                        <span>Koenigsegg</span>
+                    </button>
+                    <button class="marca-btn">
+                        <img src="/ProyectoLM/img/logo coches/pagani.png" alt="Pagani">
+                        <span>Pagani</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="contenido-berlina">
+                <h2 class="titulo-marca">Ferrari</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/Ferrari-SF90.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/sf90.webp" alt="BMW Serie 3">
+                        <h3>Ferrari SF90 Stradale</h3>
+                        <p>Precio: 625.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/Ferrari812.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/812.webp" alt="BMW Serie 5">
+                        <h3>Ferrari 812 Superfast</h3>
+                        <p>Precio: 380.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Lamborghini</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/Lambo-Aventador.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/aventador.webp" alt="Lamborghini ">
+                        <h3>Lamborghini Aventador Ultimae</h3>
+                        <p>Precio: 500.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/Lambo-Huracan.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/huracan.png" alt="Mazda CX-5">
+                        <h3>Lamborghini Huracán STO</h3>
+                        <p>Precio: 330.000 €</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">McLaren</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/Mclaren765.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/lt.webp" alt="Mercedes Clase C">
+                        <h3>McLaren 765lt</h3>
+                        <p>Precio: 358.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/Mclaren-P1.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/P1.png" alt="Mercedes Clase E">
+                        <h3>Mclaren P1</h3>
+                        <p>Precio: 1.150.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Bugatti</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/Bugatti-Chiron.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/chiron.webp" alt="Porsche Panamera">
+                        <h3>Bugatti Chiron</h3>
+                        <p>Precio: 3.000.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/Bugatti-Divo.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/divo.webp" alt="Porsche 911">
+                        <h3>Bugatti Divo</h3>
+                        <p>Precio: 5.800.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Aston Martin</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/AstonMartin-Superleggera.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/superlageera.webp" alt="Rolls-Royce Ghost">
+                        <h3>Aston Martin DBS Superleggera </h3>
+                        <p>Precio: 300.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/AstonMartin-Valkyrie.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/valkyrie.webp" alt="Rolls-Royce Wraith">
+                        <h3>Aston Martin Valkyrie</h3>
+                        <p>Precio: 3.000.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Koenigsegg</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/Koenigsegg-Jesko.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/jesko.png" alt="Skoda Superb">
+                        <h3>Koenigsegg Jesko</h3>
+                        <p>Precio: 3.000.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/Koenigsegg-Regera.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/regera.png_large" alt="Skoda Octavia">
+                        <h3>Koenigsegg Regera</h3>
+                        <p>Precio: 2.000.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Pagani</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/Pagani-Roadster.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/roadster.webp" alt="Citroën C5">
+                        <h3>Pagani Huayra Roadster</h3>
+                        <p>Precio: 3.000.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/PaganiBC.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/bc.png" alt="Citroën C4">
+                        <h3>Pagani Huayra BC</h3>
+                        <p>Precio: 2.600.000€</p>
+                    </button>
+                </div>
+                <h2 class="titulo-marca">Porsche</h2>
+                <div class="coches-grid">
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/Porsche918.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/spyder.webp" alt="Hyundai Sonata">
+                        <h3>Porsche 918 Spyder</h3>
+                        <p>Precio: 845.000€</p>
+                    </button>
+                    <button class="coche-card" onclick="location.href='/ProyectoLM/pag/tipo-de-coche/SuperDeportivos/Porsche911.html'">
+                        <img src="/ProyectoLM/img/superdeportivos/911.png" alt="Hyundai Tucson">
+                        <h3>Porsche 911 Turbo</h3>
+                        <p>Precio: 205.000€</p>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+</body>
     <footer>
         <p>Gracias por visitar nuestra página</p>
         <div class="social-media">
