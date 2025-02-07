@@ -231,3 +231,20 @@ button.coche-card img {
     background-color: #e74c3c;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .user-buttons {
+        margin-top: 10px;
+    }
+}
