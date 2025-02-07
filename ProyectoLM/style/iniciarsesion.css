@@ -1,73 +1,59 @@
-.detalle-coche-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 40px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
-.detalle-imagen {
-    flex: 1;
-    max-width: 50%;
-}
-
-.detalle-imagen img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.detalle-info-container {
-    flex: 1;
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.detalle-info {
-    background-color: white;
+.login-container {
+    background: white;
+    width: 300px;
+    margin: 50px auto;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.detalle-info h2 {
-    font-size: 28px;
-    color: #e74c3c;
-    margin-bottom: 10px;
+h2 {
+    margin-bottom: 15px;
 }
 
-.detalle-info p {
-    font-size: 18px;
-    margin: 8px 0;
-}
-
-.detalle-boton {
-    width: 100%;
+label {
+    display: block;
     text-align: left;
+    margin-top: 10px;
 }
 
-.detalle-boton button {
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
     background-color: #e74c3c;
     color: white;
-    font-size: 18px;
-    padding: 10px 20px;
     border: none;
+    padding: 10px;
+    margin-top: 15px;
+    width: 100%;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: block;
-    width: fit-content;
-    margin-top: 20px;
+    font-size: 16px;
 }
 
-.detalle-boton button:hover {
+.btn:hover {
     background-color: #c0392b;
+}
+
+#toggle-form span {
+    color: #007bff;
+    cursor: pointer;
+}
+
+#toggle-form span:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -109,7 +95,7 @@ nav {
     justify-content: center; 
     gap: 1rem; 
     flex-grow: 1; 
-    margin-left: 320px;
+    margin-left: 280px;
 }
 
 nav a {
