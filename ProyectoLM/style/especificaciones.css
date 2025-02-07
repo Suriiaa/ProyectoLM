@@ -93,7 +93,7 @@ header .header-img {
 }
 
 nav {
-    background-color: #ff6f61; /* Rojo claro */
+    background-color: #ff6f61;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -102,36 +102,16 @@ nav {
 
 .nav-links {
     display: flex;
-    justify-content: center; 
-    gap: 1rem; 
-    flex-grow: 1; 
-    margin-left: 320px;
+    justify-content: center;
+    gap: 1rem;
+    flex-grow: 1;
+    margin-left: 220px;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff; /* Blanco */
+    color: #fff; 
     font-weight: bold;
-}
-
-.user-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.user-buttons .btn {
-    background-color: white;
-    color: #007bff;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.user-buttons .btn:hover {
-    background-color: #0056b3;
-    color: white;
 }
 
 footer {
@@ -186,21 +166,4 @@ footer p {
 .nav-back .btn:hover {
     background-color: #e74c3c;
     color: #fff;
-}
-
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-    }
-
-    .user-buttons {
-        margin-top: 10px;
-    }
 }
